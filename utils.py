@@ -12,7 +12,7 @@ load_dotenv()
 
 def set_environment_variables():
     """Set necessary environment variables."""
-    os.environ["NVIDIA_API_KEY"] = "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"
+    os.environ["NVIDIA_API_KEY"] = os.getenv("API_KEY")
 
 
 def get_b64_image_from_content(image_content):
